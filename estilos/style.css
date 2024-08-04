@@ -1,63 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+    --color-fondo : white;
+    --color-botones:darkblue;
+    --color-desencriptar: #D8DFE8;
+
+}
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: white
+    background-color: var(--color-fondo);
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%; 
+    
 }
 
-.header-logo{
-    padding: 40px;
+.logo{
+    padding-top: 40px;
+    padding-left: 40px;
+    
 }
 
 .main-contenido{
     display: flex;
-    flex-direction: column;
-    padding-top: 168px;
     padding-left: 240px;
-    gap: 8px;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.textarea{
-    border: 0px;
+.text-area{
+    border: none;
+    padding-top: 168px;
+    text-transform: lowercase;
+
+
 }
-.p-img{
-    display: flex;
-    gap: 8px;
+
+::placeholder{color: var(--color-botones);}
+
+    .text-area:focus{
+        outline: none;
+    }
+
+.cartel{
+    color: grey
 }
 
 .contenedor-botones{
+    width: 680px;
+    height: 67px;
     display: flex;
-    gap: 24px;
-
+    justify-content: space-between;
+    justify-items: center;
+    margin-top: 16px;
 }
 
 .boton-contenedor{
-    width: 328px;
-    display: flex;
-    justify-content: center;
-    border-radius: 24px;
-    padding: 24px;
-    background-color: #04052E;
-    color: white;
+   width: 328px;
+   border-radius: 24px;
+   color: white;
+   background-color: var(--color-botones);
+   gap: 24px;
+   
 }
 
-.desencriptador{
-    display: flex;
-    width: 400px;
-    height: 944px;
-    border: solid 1px;
-    border-radius: 32px;
-    background-color: #93B7BE;
-    justify-content: center;
-    
-}
-
-.contenido-desencriptador{
-    width: 336px;
-    height: 304px;
-    display: flex;
-    margin-top: 243px ;
-    
-}
 
