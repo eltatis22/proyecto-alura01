@@ -85,7 +85,7 @@
     padding-top: 243px;
     border-radius: 32px;
     justify-content: center;
-    background-size: auto;
+    background-color: white;
     
 }
 
@@ -107,8 +107,8 @@
     border-radius: 24px;
     color: var(--color-botones);
     cursor: pointer;
+    position: absolute;
     
-
 }
 
 
