@@ -19,16 +19,20 @@
             <p><img src="assets/bi_exclamation-circle-fill.png" alt="advertencia">solo letras minisculas y sin acentos</p>
         </div>
         <div class="contenedor-botones">
-            <button class="boton-contenedor" onclick="botonEncripta();"  >encriptar</button>
-            <button class="boton-contenedor2" >desencriptar</button>
+            <button class="boton-contenedor" onclick="botonEncriptar();"  >encriptar</button>
+            <button class="boton-contenedor2" onclick="botonDesencriptar();" >desencriptar</button>
+            <button class="boton-reiniciar" onclick="botonReiniciar();">reiniciar</button>
         </div>
         </section>
 
         <section>
-            <textarea class="mensaje" cols="20" rows="10"></textarea>
+            <div class="mensaje-container">
+                <textarea class="mensaje" cols="20" rows="10"></textarea>
+                <img src="assets/Muñeco.png" alt="Imagen" class="imagen-mensaje">
+            </div>
 
             <div class="caja-copiar">
-                <button class="boton-copiar">Copiar</button>
+                <button class="boton-copiar" onclick="copiarTexto();">Copiar</button>
             </div>
 
         </section>
